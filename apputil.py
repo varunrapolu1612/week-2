@@ -15,9 +15,10 @@ def ways(n):
         return (int(n//5) + 1)
 
 def lowest_score(names, scores):
-    # indices that sort the scores in ascending order
-    sorted_indices = np.argsort(scores)
-    return names[sorted_indices]
+    # index of the lowest score
+    min_index = np.argmin(scores)
+    # Return a tuple (name, score)
+    return (names[min_index], scores[min_index])
 
 def sort_names(names, scores):
     # indices that sort the scores in ascending order
