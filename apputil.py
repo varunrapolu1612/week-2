@@ -25,4 +25,4 @@ def sort_names(names, scores):
     sorted_names = names[np.argsort(-scores)]
     sorted_scores = scores[np.argsort(-scores)]
     # Return list of (name, score) pairs
-    return list(zip(sorted_names, sorted_scores))
+    return list(sorted_names)
