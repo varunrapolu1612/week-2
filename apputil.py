@@ -12,7 +12,7 @@ def ways(n):
     if n<0:
         return 0
     else:
-        return (int(n//2) + 1)
+        return (int(n//5) + 1)
 
 def lowest_score(names, scores):
     # indices that sort the scores in ascending order
