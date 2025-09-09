@@ -22,7 +22,6 @@ def lowest_score(names, scores):
 
 def sort_names(names, scores):
     #sorting names and scores by sorted indices
-    sorted_names = names[np.argsort(scores)]
-    sorted_scores = scores[np.argsort(scores)]
-    # Return list of (name, score) pairs
-    return sorted_names[::-1]
+    sorted_indices = np.argsort(scores)
+    names = names[sorted_indices]
+    return (names[::-1])
