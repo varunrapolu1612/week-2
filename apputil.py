@@ -22,8 +22,8 @@ def lowest_score(names, scores):
 
 def sort_names(names, scores):
     # Convert inputs to NumPy arrays in case they are lists
-    names = np.array(names)
-    scores = np.array(scores)
+    #names = np.array(names)
+    #scores = np.array(scores)
     
     # Descending order
     sorted_indices = np.argsort(-scores)
