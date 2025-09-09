@@ -26,7 +26,7 @@ def sort_names(names, scores):
     scores = np.array(scores)
     
     # Descending order
-    sorted_indices = np.argsort(-scores)
+    sorted_indices = np.argsort(scores)
     
     # Return only names in sorted order as a Python list
-    return names[sorted_indices].tolist()
+    return names[sorted_indices][::-1].tolist()
